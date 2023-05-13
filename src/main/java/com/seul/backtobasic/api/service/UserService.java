@@ -1,6 +1,7 @@
 package com.seul.backtobasic.api.service;
 
 import com.seul.backtobasic.api.domain.dto.GetUserResponse;
+import com.seul.backtobasic.api.domain.dto.ModifyUserRequest;
 import com.seul.backtobasic.api.domain.mapper.UserMapper;
 import com.seul.backtobasic.api.entity.User;
 import com.seul.backtobasic.api.repository.UserRepository;
@@ -29,5 +30,20 @@ public class UserService {
         // 매핑 작업 필요
 
         return userMapper.toResponse(user);
+    }
+
+    public void modifyUser(ModifyUserRequest request) {
+        Optional<User> optionalUser = userRepository.findById(request.getUserSeq());
+
+        if (optionalUser.isEmpty()) {
+            throw new RuntimeException("회원이 없습니다.");
+        }
+
+        User user = optionalUser.get();
+
+        // 매핑
+        userMapper.updateUser(request, user);
+
+        System.out.println();
     }
 }
