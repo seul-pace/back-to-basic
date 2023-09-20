@@ -3,7 +3,7 @@ package com.seul.backtobasic.study;
 public class Calculator {
 
     // 계산기 구현
-    int add(int i, int j) {
+    public static int add(int i, int j) {
         return i + j;
     }
 
