@@ -8,6 +8,7 @@ public class MainController {
 
     @GetMapping("/")
     public String main() {
+        // 커밋 확인 테스트
         return "test";
     }
 
