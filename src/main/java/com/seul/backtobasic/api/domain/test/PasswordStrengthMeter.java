@@ -1,4 +1,4 @@
-package com.seul.backtobasic.api.domain;
+package com.seul.backtobasic.api.domain.test;
 
 import com.seul.backtobasic.api.enums.PasswordStrength;
 

@@ -1,6 +1,6 @@
 package com.seul.backtobasic.chap01;
 
-import com.seul.backtobasic.api.domain.PasswordStrengthMeter;
+import com.seul.backtobasic.api.domain.test.PasswordStrengthMeter;
 import com.seul.backtobasic.api.enums.PasswordStrength;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +17,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 모두 충족 -> 암호 강함
  * 2개 충족 -> 암호 보통
  * 1개 이하 충족 -> 암호 약함
+ *
+ * ---
+ * 테스트 방법
+ * 1. 구현이 쉬운 테스트부터 시작하기
+ * 2. 예외 상황을 먼저 테스트하기
+ *
  */
 public class PasswordStrengthMeterTest {
     private PasswordStrengthMeter meter = new PasswordStrengthMeter();
