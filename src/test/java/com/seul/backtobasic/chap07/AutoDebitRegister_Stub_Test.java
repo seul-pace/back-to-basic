@@ -6,7 +6,7 @@ import com.seul.backtobasic.api.domain.test.dto.AutoDebitReq;
 import com.seul.backtobasic.api.domain.test.dto.RegisterResult;
 import com.seul.backtobasic.api.enums.CardValidity;
 import com.seul.backtobasic.api.repository.test.StubAutoDebitInfoRepository;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static com.seul.backtobasic.api.enums.CardValidity.INVALID;
 import static org.junit.jupiter.api.Assertions.assertEquals;

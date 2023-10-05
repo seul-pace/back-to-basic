@@ -6,7 +6,7 @@ import com.seul.backtobasic.api.domain.test.dto.AutoDebitReq;
 import com.seul.backtobasic.api.domain.test.dto.RegisterResult;
 import com.seul.backtobasic.api.repository.test.AutoDebitInfoRepository;
 import com.seul.backtobasic.api.repository.test.JpaAutoDebitInfoRepository;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 import static com.seul.backtobasic.api.enums.CardValidity.THEFT;
