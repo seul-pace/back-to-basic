@@ -20,7 +20,7 @@ public class AutoDebitRegister_Fake_Test {
 
     @BeforeEach
     void setUp() {
-        cardNumberValidator = new StubCardNumberValidator();
+        cardNumberValidator = new StubCardNumberValidator("");
         repository = new MemoryAutoDebitInfoRepository();
         register = new AutoDebitRegister(cardNumberValidator, repository);
     }

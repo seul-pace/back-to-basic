@@ -18,7 +18,7 @@ public class AutoDebitRegister_Stub_Test {
 
     @Test
     void setUp() {
-        stubValidator = new StubCardNumberValidator();
+        stubValidator = new StubCardNumberValidator("");
         stubRepository = new StubAutoDebitInfoRepository();
         register = new AutoDebitRegister(stubValidator, stubRepository);
     }

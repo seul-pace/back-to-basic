@@ -18,7 +18,7 @@ public class AutoDebitRegisterTest {
 
     @BeforeEach
     void setUp() {
-        CardNumberValidator validator = new CardNumberValidator();
+        CardNumberValidator validator = new CardNumberValidator("");
         AutoDebitInfoRepository repository = new JpaAutoDebitInfoRepository();
         register = new AutoDebitRegister(validator, repository);
     }

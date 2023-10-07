@@ -9,6 +9,10 @@ public class StubCardNumberValidator extends CardNumberValidator {
     private String invalidNo;
     private String theftNo;
 
+    public StubCardNumberValidator(String server) {
+        super(server);
+    }
+
     public void setInvalidNo(String invalidNo) {
         // invalidNo 필드와 동일한 카드번호면 INVALID, 그렇지 않으면 VALID
         this.invalidNo = invalidNo;

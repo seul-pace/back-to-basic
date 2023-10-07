@@ -9,7 +9,7 @@ spring:
         max-size: 8
       thread-name-prefix: "executor-v2-"
   datasource:
-    url: jdbc:h2:tcp://localhost/~/seul-db-test
+    url: jdbc:h2:tcp://localhost/~/seul-test
     username: sa
     password:
     driver-class-name: org.h2.Driver
