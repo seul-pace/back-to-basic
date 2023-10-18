@@ -45,5 +45,8 @@ dependencies {
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+	useJUnitPlatform {
+//		includeTags 'integration' // 포함
+//		excludeTags 'slow | very-slow' // 미포함
+	}
 }
