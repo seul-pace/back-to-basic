@@ -15,6 +15,10 @@ public class SearchingTravel {
         initializeProduct();
     }
 
+    public List<TravelInfo> getTravelInfoList() {
+        return this.travelInfoList;
+    }
+
     // 데이터를 초기화하여 외부에서 호출하지 못하도록 private으로 선언
     private void initializeProduct() {
         TravelInfo cebu = new TravelInfo();
